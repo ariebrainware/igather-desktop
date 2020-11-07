@@ -22,5 +22,30 @@ iGather
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:iGather.My.Resources.Resources.checklist">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:iGather.My.Resources.Resources.checklist_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:iGather.My.Resources.Resources.gather_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:iGather.My.Resources.Resources.gather_icon256px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:iGather.My.Resources.Resources.show_password24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

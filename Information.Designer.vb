@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class information
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,11 @@ Partial Class information
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.SaveButton = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.InfoDataGridView = New System.Windows.Forms.DataGridView()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,11 +36,11 @@ Partial Class information
         Me.Label5 = New System.Windows.Forms.Label()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteButton = New System.Windows.Forms.Button()
         Me.UpdateButton = New System.Windows.Forms.Button()
         Me.SearchButton = New System.Windows.Forms.Button()
@@ -51,34 +51,40 @@ Partial Class information
         Me.CurrentPasswordTextBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.NoteTextBox = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BirthdayDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ClearButton = New System.Windows.Forms.Button()
+        CType(Me.InfoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.NameGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'SaveButton
         '
+        Me.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SaveButton.Location = New System.Drawing.Point(814, 397)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(76, 31)
-        Me.SaveButton.TabIndex = 0
+        Me.SaveButton.TabIndex = 5
         Me.SaveButton.Text = "Save"
         Me.SaveButton.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'InfoDataGridView
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 27)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1040, 300)
-        Me.DataGridView1.TabIndex = 4
+        Me.InfoDataGridView.AllowUserToAddRows = False
+        Me.InfoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.InfoDataGridView.Location = New System.Drawing.Point(12, 27)
+        Me.InfoDataGridView.Name = "InfoDataGridView"
+        Me.InfoDataGridView.ReadOnly = True
+        Me.InfoDataGridView.Size = New System.Drawing.Size(1040, 300)
+        Me.InfoDataGridView.TabIndex = 7
         '
         'FirstNameTextBox
         '
         Me.FirstNameTextBox.Location = New System.Drawing.Point(76, 19)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.FirstNameTextBox.TabIndex = 5
+        Me.FirstNameTextBox.TabIndex = 0
         '
         'Label1
         '
@@ -103,7 +109,7 @@ Partial Class information
         Me.NicknameTextBox.Location = New System.Drawing.Point(76, 57)
         Me.NicknameTextBox.Name = "NicknameTextBox"
         Me.NicknameTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.NicknameTextBox.TabIndex = 7
+        Me.NicknameTextBox.TabIndex = 1
         '
         'Label3
         '
@@ -119,7 +125,7 @@ Partial Class information
         Me.UsernameTextBox.Location = New System.Drawing.Point(355, 390)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.UsernameTextBox.TabIndex = 9
+        Me.UsernameTextBox.TabIndex = 1
         '
         'Label4
         '
@@ -135,7 +141,7 @@ Partial Class information
         Me.LastNameTextBox.Location = New System.Drawing.Point(76, 96)
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.LastNameTextBox.TabIndex = 11
+        Me.LastNameTextBox.TabIndex = 2
         '
         'Label5
         '
@@ -151,7 +157,7 @@ Partial Class information
         Me.EmailTextBox.Location = New System.Drawing.Point(355, 356)
         Me.EmailTextBox.Name = "EmailTextBox"
         Me.EmailTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.EmailTextBox.TabIndex = 13
+        Me.EmailTextBox.TabIndex = 0
         '
         'MenuStrip1
         '
@@ -161,19 +167,6 @@ Partial Class information
         Me.MenuStrip1.Size = New System.Drawing.Size(1064, 24)
         Me.MenuStrip1.TabIndex = 15
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
         '
         'AccountToolStripMenuItem
         '
@@ -191,33 +184,49 @@ Partial Class information
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'DeleteButton
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(868, 452)
+        Me.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DeleteButton.Location = New System.Drawing.Point(813, 452)
         Me.DeleteButton.Name = "DeleteButton"
         Me.DeleteButton.Size = New System.Drawing.Size(76, 31)
-        Me.DeleteButton.TabIndex = 16
+        Me.DeleteButton.TabIndex = 7
         Me.DeleteButton.Text = "Delete"
         Me.DeleteButton.UseVisualStyleBackColor = True
         '
         'UpdateButton
         '
+        Me.UpdateButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.UpdateButton.Location = New System.Drawing.Point(920, 397)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.Size = New System.Drawing.Size(76, 31)
-        Me.UpdateButton.TabIndex = 17
+        Me.UpdateButton.TabIndex = 6
         Me.UpdateButton.Text = "Update"
         Me.UpdateButton.UseVisualStyleBackColor = True
         '
         'SearchButton
         '
+        Me.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SearchButton.Location = New System.Drawing.Point(976, 335)
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(76, 31)
-        Me.SearchButton.TabIndex = 18
+        Me.SearchButton.TabIndex = 10
         Me.SearchButton.Text = "Search"
         Me.SearchButton.UseVisualStyleBackColor = True
         '
@@ -231,7 +240,7 @@ Partial Class information
         Me.SearchTextBox.Location = New System.Drawing.Point(813, 344)
         Me.SearchTextBox.Name = "SearchTextBox"
         Me.SearchTextBox.Size = New System.Drawing.Size(157, 20)
-        Me.SearchTextBox.TabIndex = 20
+        Me.SearchTextBox.TabIndex = 9
         '
         'NameGroupBox
         '
@@ -262,12 +271,12 @@ Partial Class information
         Me.CurrentPasswordTextBox.Location = New System.Drawing.Point(355, 429)
         Me.CurrentPasswordTextBox.Name = "CurrentPasswordTextBox"
         Me.CurrentPasswordTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.CurrentPasswordTextBox.TabIndex = 22
+        Me.CurrentPasswordTextBox.TabIndex = 2
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(482, 359)
+        Me.Label7.Location = New System.Drawing.Point(482, 393)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(30, 13)
         Me.Label7.TabIndex = 25
@@ -275,17 +284,46 @@ Partial Class information
         '
         'NoteTextBox
         '
-        Me.NoteTextBox.Location = New System.Drawing.Point(527, 356)
+        Me.NoteTextBox.Location = New System.Drawing.Point(527, 390)
         Me.NoteTextBox.Multiline = True
         Me.NoteTextBox.Name = "NoteTextBox"
-        Me.NoteTextBox.Size = New System.Drawing.Size(262, 93)
-        Me.NoteTextBox.TabIndex = 24
+        Me.NoteTextBox.Size = New System.Drawing.Size(262, 59)
+        Me.NoteTextBox.TabIndex = 4
+        '
+        'BirthdayDateTimePicker
+        '
+        Me.BirthdayDateTimePicker.Location = New System.Drawing.Point(527, 356)
+        Me.BirthdayDateTimePicker.Name = "BirthdayDateTimePicker"
+        Me.BirthdayDateTimePicker.Size = New System.Drawing.Size(200, 20)
+        Me.BirthdayDateTimePicker.TabIndex = 3
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(467, 359)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 13)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "Birthday"
+        '
+        'ClearButton
+        '
+        Me.ClearButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ClearButton.Location = New System.Drawing.Point(920, 452)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(76, 31)
+        Me.ClearButton.TabIndex = 8
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
         '
         'information
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1064, 506)
+        Me.Controls.Add(Me.ClearButton)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.BirthdayDateTimePicker)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.NoteTextBox)
         Me.Controls.Add(Me.Label6)
@@ -299,13 +337,14 @@ Partial Class information
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.UsernameTextBox)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.InfoDataGridView)
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "information"
         Me.Text = "Information"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InfoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.NameGroupBox.ResumeLayout(False)
@@ -316,7 +355,7 @@ Partial Class information
     End Sub
 
     Friend WithEvents SaveButton As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents InfoDataGridView As DataGridView
     Friend WithEvents FirstNameTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
@@ -343,4 +382,7 @@ Partial Class information
     Friend WithEvents CurrentPasswordTextBox As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents NoteTextBox As TextBox
+    Friend WithEvents BirthdayDateTimePicker As DateTimePicker
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ClearButton As Button
 End Class

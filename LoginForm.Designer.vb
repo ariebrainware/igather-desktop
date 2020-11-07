@@ -30,25 +30,15 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
+        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LogoPictureBox
-        '
-        Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
-        Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
-        Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 193)
-        Me.LogoPictureBox.TabIndex = 0
-        Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
@@ -85,6 +75,7 @@ Partial Class LoginForm
         '
         'OK
         '
+        Me.OK.Cursor = System.Windows.Forms.Cursors.Hand
         Me.OK.Location = New System.Drawing.Point(197, 161)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
@@ -93,12 +84,22 @@ Partial Class LoginForm
         '
         'Cancel
         '
+        Me.Cancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Cancel.Location = New System.Drawing.Point(300, 161)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
+        '
+        'LogoPictureBox
+        '
+        Me.LogoPictureBox.Image = Global.iGather.My.Resources.Resources.gather_icon256px
+        Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
+        Me.LogoPictureBox.Name = "LogoPictureBox"
+        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 193)
+        Me.LogoPictureBox.TabIndex = 0
+        Me.LogoPictureBox.TabStop = False
         '
         'LoginForm
         '

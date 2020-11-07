@@ -24,3 +24,6 @@ C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.vbproj.C
 C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.exe
 C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.xml
 C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.pdb
+C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.AboutBox.resources
+C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.SplashScreen.resources
+C:\Users\Brainware\source\repos\ariebrainware\iGather\obj\Debug\iGather.Settings.resources
