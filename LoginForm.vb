@@ -27,7 +27,7 @@ Public Class LoginForm
                 Return
             End If
         End While
-        MsgBox("Fail login")
+        MessageBox.Show("Failed Login", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
     End Sub
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click

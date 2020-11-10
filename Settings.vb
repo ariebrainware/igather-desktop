@@ -49,6 +49,7 @@ Public Class Settings
                 ConfirmPasswordTextBox.Text = ""
                 Label3.Hide()
                 ConfirmPasswordTextBox.Hide()
+                ValidatedMark.Hide()
             End If
             conn.Close()
         End If
