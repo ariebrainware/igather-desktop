@@ -131,6 +131,7 @@ Partial Class Settings
         '
         'ShowPasswordButton
         '
+        Me.ShowPasswordButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ShowPasswordButton.Image = Global.iGather.My.Resources.Resources.show_password24px
         Me.ShowPasswordButton.Location = New System.Drawing.Point(258, 87)
         Me.ShowPasswordButton.Name = "ShowPasswordButton"
