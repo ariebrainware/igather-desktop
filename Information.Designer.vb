@@ -23,6 +23,7 @@ Partial Class information
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(information))
         Me.SaveButton = New System.Windows.Forms.Button()
         Me.InfoDataGridView = New System.Windows.Forms.DataGridView()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
@@ -178,7 +179,7 @@ Partial Class information
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'LogoutToolStripMenuItem
@@ -340,6 +341,7 @@ Partial Class information
         Me.Controls.Add(Me.InfoDataGridView)
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "information"

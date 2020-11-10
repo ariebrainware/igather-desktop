@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("iGather")>
-<Assembly: AssemblyDescription("iGather is stand for Information Gathering, act as a central of information I collected (or will)")>
+<Assembly: AssemblyDescription("iGather is stand for Information Gathering, act as a central of information I collected from many sources(or will)")>
 <Assembly: AssemblyCompany("Ritalin Group")>
 <Assembly: AssemblyProduct("iGather")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
